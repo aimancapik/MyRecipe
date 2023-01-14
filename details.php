@@ -48,7 +48,7 @@ $pro_url = $row_product['product_url'];
     <!-- HERO -->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">Product </span>View
+        <span class="nero__bold">Recipe </span>Details
       </div>
       <p class="nero__text">
       </p>
@@ -173,11 +173,11 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 <form action="" method="post" class="form-horizontal" ><!-- form-horizontal Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+<!--<div class="form-group">
 
 <label class="col-md-5 control-label" >Product Quantity </label>
 
-<div class="col-md-7" ><!-- col-md-7 Starts -->
+<div class="col-md-7" >
 
 <select name="product_qty" class="form-control" >
 
@@ -191,21 +191,21 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 </select>
 
-</div><!-- col-md-7 Ends -->
+</div><
 
-</div><!-- form-group Ends -->
+</div>< form-group Ends -->
 
 <?php
 
-echo "
+// echo "
 
-<p class='price'>
+// <p class='price'>
 
-Product Price : RM$pro_price<br>
+// Product Price : RM$pro_price<br>
 
-</p>
+// </p>
 
-";
+// ";
 
 
 
@@ -217,15 +217,15 @@ Product Price : RM$pro_price<br>
 
 <button class="btn btn-danger" type="submit" name="add_cart">
 
-<i class="fa fa-shopping-cart" ></i> Add to Cart
+<i class="fa fa-shopping-cart" ></i> Add to Wishlist
 
 </button>
 
-<button class="btn btn-warning" type="submit" name="add_wishlist">
+<!-- <button class="btn btn-warning" type="submit" name="add_wishlist">
 
 <i class="fa fa-heart" ></i> Add to Wishlist
 
-</button>
+</button> -->
 
 
 <?php
@@ -319,7 +319,7 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 <?php
 
-echo "Product Description";
+echo "Recipe Steps";
 
 ?>
 

@@ -14,7 +14,7 @@ include("includes/main.php");
     <!-- HERO -->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">SHOP</span> Cart
+        <span class="nero__bold">My</span> Wishlists
       </div>
       <p class="nero__text">
       </p>
@@ -34,7 +34,7 @@ include("includes/main.php");
 
 <form action="cart.php" method="post" enctype="multipart-form-data" ><!-- form Starts -->
 
-<h1> Shopping Cart </h1>
+<h1> Current Wishlists </h1>
 
 <?php
 
@@ -48,7 +48,7 @@ $count = mysqli_num_rows($run_cart);
 
 ?>
 
-<p class="text-muted" > You currently have <?php echo $count; ?> item(s) in your cart. </p>
+<p class="text-muted" > You currently have <?php echo $count; ?> recipe(s) in your wishlist. </p>
 
 <div class="table-responsive" ><!-- table-responsive Starts -->
 
@@ -58,17 +58,20 @@ $count = mysqli_num_rows($run_cart);
 
 <tr>
 
-<th colspan="2" >Product</th>
+<!-- <th colspan="2" >Wishlist</th> -->
 
-<th>Quantity</th>
+<th>Wishlist</th>
 
-<th>Unit Price</th>
+<th colspan="4">Recipe Name</th>
 
-<th></th>
+<!-- <th></th> -->
 
+<th>Delete</th>
+
+<!--
 <th colspan="1">Delete</th>
 
-<th colspan="2"> Sub Total </th>
+<th colspan="2"> Sub Total </th> -->
 
 
 </tr>
@@ -95,15 +98,17 @@ $run_products = mysqli_query($con,$get_products);
 
 while($row_products = mysqli_fetch_array($run_products)){
 
-$product_title = $row_products['product_title'];
+  $product_title = $row_products['product_title'];
 
-$product_img1 = $row_products['product_img1'];
+  $pro_url = $row_products['product_url'];
 
-$sub_total = $only_price*$pro_qty;
+  $product_img1 = $row_products['product_img1'];
 
-$_SESSION['pro_qty'] = $pro_qty;
+  $sub_total = $only_price*$pro_qty;
 
-$total += $sub_total;
+  $_SESSION['pro_qty'] = $pro_qty;
+
+  $total += $sub_total;
 
 ?>
 
@@ -115,21 +120,21 @@ $total += $sub_total;
 
 </td>
 
-<td>
+<td colspan="3">
 
-<a href="#" > <?php echo $product_title; ?> </a>
+<a href='<?php echo $pro_url; ?>' > <?php echo $product_title; ?> </a>
 
 </td>
 
-<td>
+<!-- <td>
 <input type="text" name="quantity" value="<?php echo $_SESSION['pro_qty']; ?>" data-product_id="<?php echo $pro_id; ?>" class="quantity form-control">
-</td>
+</td> -->
 
-<td>
+<!-- <td>
 
 RM<?php echo $only_price; ?>.00
 
-</td>
+</td> -->
 
 <td>
 
@@ -141,11 +146,11 @@ RM<?php echo $only_price; ?>.00
 <input type="checkbox" name="remove[]" value="<?php echo $pro_id; ?>">
 </td>
 
-<td>
+<!-- <td>
 
 RM<?php echo $sub_total; ?>.00
 
-</td>
+</td> -->
 
 </tr><!-- tr Ends -->
 
