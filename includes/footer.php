@@ -46,8 +46,8 @@
 			<div class="footer-nav__col footer-nav__col--contacts">
 				<div class="footer-nav__heading" style=color:black>Contact details</div>
 				<address class="address" style=color:white>
-				Head Office: Maajun Nenda.<br>
-				69 Jalan Bagus, Kuala Lumpur, Malaysia.
+				60, Jalan 17, Taman Impian Ehsan.<br>
+				Parit Raja, Johor.
 			</address>
 				<div class="phone" style=color:black>
 					Telephone:
@@ -68,11 +68,11 @@
 		<div class="container clearfix">
 
 			<div class="copyright">
-				&copy; 2022 Maajun Nenda&trade;
+				&copy; 2023 MyRecipe&trade;
 			</div>
 
 			<div class="developer">
-				Dev by Kimi Azwad
+				Dev by Khoo Wen Bin & Imran 
 			</div>
 
 			<div class="designby">
