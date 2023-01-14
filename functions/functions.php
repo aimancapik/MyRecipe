@@ -1,6 +1,6 @@
 <?php
 
-$db = mysqli_connect("localhost","root","","maajundatabase");
+$db = mysqli_connect("localhost","root","","myrecipe");
 
 /// IP address code starts /////
 function getRealUserIp(){
