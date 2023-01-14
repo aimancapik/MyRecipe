@@ -38,6 +38,8 @@ $pro_price = $row_product['product_price'];
 
 $pro_desc = $row_product['product_desc'];
 
+$ingredient = $row_product['ingredient'];
+
 $pro_img1 = $row_product['product_img1'];
 
 $pro_url = $row_product['product_url'];
@@ -205,8 +207,7 @@ echo "
 
 <span class='nero__bold'>Ingredients</span>
 <br>
-$pro_desc
-$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc
+$ingredient
 <br>
 
 </p>
