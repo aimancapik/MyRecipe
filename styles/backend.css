@@ -888,7 +888,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
-  background: #666 url("../images/sale.jpg") no-repeat;
+  background: #666 url("../images/bannerbaru.png");
   background-size: cover;
   background-position: center;
 }
@@ -908,10 +908,10 @@ img {
 
 .bnner{
   position: relative;
-  padding-top: 300px;
-  padding-bottom: 140px;
+  padding-top: 700px;
+  /* padding-bottom: 140px; */
   color: #fff;
-  background: #666 url("../images/sale.jpg") no-repeat;
+  background: #666 url("../images/bannerbaru.png") no-repeat;
   background-size: cover;
   background-position: 50%
 }
@@ -927,7 +927,7 @@ img {
   background-color: #fac000;
   line-height: 40px;
   right: 100px;
-  top: 350px;
+  top: 700px;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
