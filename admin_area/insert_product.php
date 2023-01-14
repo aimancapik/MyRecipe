@@ -203,7 +203,7 @@ if($run_product){
   // $ecc stores error correction capability('L')
   $ecc = 'L';
   $pixel_Size = 10;
-  $frame_Size = 10;
+  $frame_Size = 2;
     
   // Generates QR Code and Stores it in directory given
   QRcode::png($text, $file, $ecc, $pixel_Size, $frame_Size);
