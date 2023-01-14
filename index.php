@@ -12,12 +12,12 @@ include("includes/main.php");
   <!-- Cover -->
   <main>
     <div class="bnner">
-   <a href="shop.php" class="btn1">View all products
+   <a href="shop.php" class="btn1">View all recipe
 </a>
     </div>
     <!-- Main -->
     <div class="wrapper">
-            <h1 style="color: black">Featured Collection<h1>
+            <h1 style="color: black">Featured Recipe<h1>
             
       </div>
 
