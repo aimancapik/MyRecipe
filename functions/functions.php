@@ -125,7 +125,7 @@ echo "
 
 <a href='$pro_url' class='btn btn-danger'>
 
-<i class='fa fa-shopping-cart'></i> Add To Cart
+<i class='fa fa-shopping-cart'></i> Add To Wishlist
 
 </a>
 
@@ -223,7 +223,7 @@ echo "
 
 <a href='$pro_url' class='btn btn-danger'>
 
-<i class='fa fa-shopping-cart' data-price=$pro_price></i> Add To Cart
+<i class='fa fa-shopping-cart' data-price=$pro_price></i> Add To Wishlist
 
 </a>
 

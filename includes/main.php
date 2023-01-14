@@ -39,7 +39,7 @@
         <div class="basket">
           <a href="cart.php" class="btn btn--basket">
             
-            <?php items(); ?> items in cart
+            <?php items(); ?> recipe(s) in wishlist
           </a>
         </div>
         
@@ -97,7 +97,7 @@ if(!isset($_SESSION['customer_email'])){
 
             <li class="categories__item">
               <a class="categories__link" href="shop.php">
-                Product
+                Recipes
                
               </a>
             </li>
