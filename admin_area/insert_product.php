@@ -15,7 +15,7 @@ else {
 
 <head>
 
-<title> Insert Products </title>
+<title> Insert a Recipe </title>
 
 
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
@@ -33,7 +33,7 @@ else {
 
 <li class="active">
 
-<i class="fa fa-dashboard"> </i> Dashboard / Insert Products
+<i class="fa fa-dashboard"> </i> Dashboard / Insert a Recipe
 
 </li>
 
@@ -54,7 +54,7 @@ else {
 
 <h3 class="panel-title">
 
-<i class="fa fa-money fa-fw"></i> Insert Products
+<i class="fa fa-money fa-fw"></i> Insert a Recipe
 
 </h3>
 
@@ -66,7 +66,7 @@ else {
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Title </label>
+<label class="col-md-3 control-label" > Recipe Title </label>
 
 <div class="col-md-6" >
 
@@ -79,7 +79,7 @@ else {
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Url </label>
+<label class="col-md-3 control-label" > Recipe Url </label>
 
 <div class="col-md-6" >
 
@@ -89,7 +89,7 @@ else {
 
 <p style="font-size:15px; font-weight:bold;">
 
-Product Url Example : product-name-combo
+Recipe Url Example : recipe-name-combo
 
 </p>
 
@@ -99,7 +99,7 @@ Product Url Example : product-name-combo
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Image 1 </label>
+<label class="col-md-3 control-label" > Recipe Image 1 </label>
 
 <div class="col-md-6" >
 
@@ -111,7 +111,7 @@ Product Url Example : product-name-combo
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Price </label>
+<label class="col-md-3 control-label" > Recipe Price </label>
 
 <div class="col-md-6" >
 
@@ -123,7 +123,7 @@ Product Url Example : product-name-combo
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Description </label>
+<label class="col-md-3 control-label" > Recipe Description </label>
 
 <div class="col-md-6" >
 
@@ -141,7 +141,7 @@ Product Url Example : product-name-combo
 
 <div class="col-md-6" >
 
-<input type="submit" name="submit" value="Insert Product" class="btn btn-primary form-control" >
+<input type="submit" name="submit" value="Insert Recipe" class="btn btn-primary form-control" >
 
 </div>
 
@@ -212,7 +212,7 @@ if($run_product){
 
   $result = mysqli_query($con,$stmt);
 
-echo "<script>alert('Product has been inserted successfully')</script>";
+echo "<script>alert('Recipe has been inserted successfully')</script>";
 
 echo "<script>window.open('index.php?view_products','_self')</script>";
 

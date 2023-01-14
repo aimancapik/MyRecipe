@@ -46,7 +46,7 @@ $p_url = $row_edit['product_url'];
 
 <head>
 
-<title> Edit Products </title>
+<title> Edit Recipe </title>
 
 
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
@@ -64,7 +64,7 @@ $p_url = $row_edit['product_url'];
 
 <li class="active">
 
-<i class="fa fa-dashboard"> </i> Dashboard / Edit Products
+<i class="fa fa-dashboard"> </i> Dashboard / Edit Recipe
 
 </li>
 
@@ -85,7 +85,7 @@ $p_url = $row_edit['product_url'];
 
 <h3 class="panel-title">
 
-<i class="fa fa-money fa-fw"></i> Edit Products
+<i class="fa fa-money fa-fw"></i> Edit Recipe
 
 </h3>
 
@@ -97,7 +97,7 @@ $p_url = $row_edit['product_url'];
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Title </label>
+<label class="col-md-3 control-label" > Recipe Title </label>
 
 <div class="col-md-6" >
 
@@ -110,7 +110,7 @@ $p_url = $row_edit['product_url'];
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Url </label>
+<label class="col-md-3 control-label" > Recipe Url </label>
 
 <div class="col-md-6" >
 
@@ -120,7 +120,7 @@ $p_url = $row_edit['product_url'];
 
 <p style="font-size:15px; font-weight:bold;">
 
-Product Url Example : navy-blue-t-shirt
+Recipe Url Example : navy-blue-t-shirt
 
 </p>
 
@@ -130,7 +130,7 @@ Product Url Example : navy-blue-t-shirt
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Image 1 </label>
+<label class="col-md-3 control-label" > Recipe Image 1 </label>
 
 <div class="col-md-6" >
 
@@ -143,7 +143,7 @@ Product Url Example : navy-blue-t-shirt
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Price </label>
+<label class="col-md-3 control-label" > Recipe Price </label>
 
 <div class="col-md-6" >
 
@@ -156,7 +156,7 @@ Product Url Example : navy-blue-t-shirt
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Description </label>
+<label class="col-md-3 control-label" > Recipe Description </label>
 
 <div class="col-md-6" >
 
@@ -176,7 +176,7 @@ Product Url Example : navy-blue-t-shirt
 
 <div class="col-md-6" >
 
-<input type="submit" name="update" value="Update Product" class="btn btn-primary form-control" >
+<input type="submit" name="update" value="Update Recipe" class="btn btn-primary form-control" >
 
 </div>
 
@@ -228,7 +228,7 @@ $run_product = mysqli_query($con,$update_product);
 
 if($run_product){
 
-echo "<script> alert('Product has been updated successfully') </script>";
+echo "<script> alert('Recipe has been updated successfully') </script>";
 
 echo "<script>window.open('index.php?view_products','_self')</script>";
 

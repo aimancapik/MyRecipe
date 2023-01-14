@@ -21,7 +21,7 @@ else {
 
 <li class="active" >
 
-<i class="fa fa-dashboard"></i> Dashboard / View Products
+<i class="fa fa-dashboard"></i> Dashboard / View Recipes
 
 </li>
 
@@ -41,7 +41,7 @@ else {
 
 <h3 class="panel-title" ><!-- panel-title Starts -->
 
-<i class="fa fa-money fa-fw" ></i> View Products
+<i class="fa fa-money fa-fw" ></i> View Recipes
 
 </h3><!-- panel-title Ends -->
 
@@ -60,8 +60,8 @@ else {
 <th>#</th>
 <th>Title</th>
 <th>Image</th>
-<th>Price</th>
-<th>Sold</th>
+<!-- <th>Price</th>
+<th>Sold</th> -->
 <th>Date</th>
 <th>Delete</th>
 <th>Edit</th>
@@ -104,18 +104,6 @@ $i++;
 <td><?php echo $pro_title; ?></td>
 
 <td><img src="product_images/<?php echo $pro_image; ?>" width="60" height="60"></td>
-
-<td>RM <?php echo $pro_price; ?></td>
-
-<td>
-<?php
-
-$get_sold = "select * from pending_orders where product_id='$pro_id'";
-$run_sold = mysqli_query($con,$get_sold);
-$count = mysqli_num_rows($run_sold);
-echo $count;
-?>
-</td>
 
 <td><?php echo $pro_date; ?></td>
 
