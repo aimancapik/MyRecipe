@@ -31,11 +31,11 @@
 						<a href="customer_register.php" class="footer-nav__link">Register</a>
 					</li>
 					<li class="footer-nav__item">
-						<a href="cart.php" class="footer-nav__link">View cart</a>
+						<a href="cart.php" class="footer-nav__link">My Wishlist</a>
 					</li>
-					<li class="footer-nav__item">
+					<!-- <li class="footer-nav__item">
 					<a href="my_account.php?my_wishlist" class="footer-nav__link">My wishlist</a>
-					</li>
+					</li> -->
 					<li class="footer-nav__item">
 						<a href="my_account.php?edit_account" class="footer-nav__link">Update information</a>
 					</li>

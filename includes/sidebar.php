@@ -46,11 +46,11 @@ echo "
 
 <ul class="nav nav-pills nav-stacked"><!-- nav nav-pills nav-stacked Starts -->
 
-<li class="<?php if(isset($_GET['my_orders'])){ echo "active"; } ?>">
+<!-- <li class="<?php if(isset($_GET['my_orders'])){ echo "active"; } ?>">
 
 <a href="my_account.php?my_orders"> <i class="fa fa-list"> </i> My Orders </a>
 
-</li>
+</li> -->
 
 <li class="<?php if(isset($_GET['edit_account'])){ echo "active"; } ?>">
 
@@ -64,11 +64,11 @@ echo "
 
 </li>
 
-<li class="<?php if(isset($_GET['my_wishlist'])){ echo "active"; } ?>">
+<!-- <li class="<?php if(isset($_GET['my_wishlist'])){ echo "active"; } ?>">
 
 <a href="my_account.php?my_wishlist"> <i class="fa fa-heart"></i> My WishList </a>
 
-</li>
+</li> -->
 
 <li class="<?php if(isset($_GET['delete_account'])){ echo "active"; } ?>">
 

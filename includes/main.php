@@ -114,7 +114,7 @@ if(!isset($_SESSION['customer_email'])){
                 <div class="clearfix">
                   <div class="dropdown__half">
                     <div class="dropdown__heading">Account Settings</div>
-                    <ul class="dropdown__items">
+                    <!-- <ul class="dropdown__items">
                       <li class="dropdown__item">
                         <a href="my_account.php?my_wishlist" class="dropdown__link">My Wishlist</a>
                       </li>
@@ -124,7 +124,7 @@ if(!isset($_SESSION['customer_email'])){
                       <li class="dropdown__item">
                         <a href="my_account.php?my_orders" class="dropdown__link">View Shopping Cart</a>
                       </li>
-                    </ul>
+                    </ul> -->
                   </div>
                   <div class="dropdown__half">
                     <div class="dropdown__heading"></div>

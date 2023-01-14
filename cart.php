@@ -160,13 +160,13 @@ RM<?php echo $sub_total; ?>.00
 
 <tfoot><!-- tfoot Starts -->
 
-<tr>
+<!-- <tr>
 
 <th colspan="5"> Total </th>
 
 <th colspan="2"> RM<?php echo $total; ?>.00 </th>
 
-</tr>
+</tr> -->
 
 </tfoot><!-- tfoot Ends -->
 
@@ -191,15 +191,15 @@ RM<?php echo $sub_total; ?>.00
 
 <button class="btn btn-info" type="submit" name="update" value="Update Cart">
 
-<i class="fa fa-refresh"></i> Update Cart
+<i class="fa fa-refresh"></i> Confirm Delete
 
 </button>
 
-<a href="checkout.php" class="btn btn-success">
+<!-- <a href="checkout.php" class="btn btn-success">
 
 Proceed to Checkout <i class="fa fa-chevron-right"></i>
 
-</a>
+</a> -->
 
 </div><!-- pull-right Ends -->
 
@@ -251,61 +251,7 @@ echo @$up_cart = update_cart();
 
 </div><!-- col-md-9 Ends -->
 
-<div class="col-md-3"><!-- col-md-3 Starts -->
 
-<div class="box" id="order-summary"><!-- box Starts -->
-
-<div class="box-header"><!-- box-header Starts -->
-
-<h3>Order Summary</h3>
-
-</div><!-- box-header Ends -->
-
-<p class="text-muted">
-The total price of the product and the delivery fee (free) are calculated based on the price of the items you have entered in the cart.
-</p>
-
-<div class="table-responsive"><!-- table-responsive Starts -->
-
-<table class="table"><!-- table Starts -->
-
-<tbody><!-- tbody Starts -->
-
-<tr>
-
-<td> Order Subtotal </td>
-
-<th> RM<?php echo $total;?>.00 </th>
-
-</tr>
-
-<tr>
-
-<td> Delivery </td>
-
-<th>FREE DELIVERY</th>
-
-</tr>
-
-<tr>
-
-<tr class="total">
-
-<td>Total</td>
-
-<th>RM<?php echo $total; ?>.00</th>
-
-</tr>
-
-</tbody><!-- tbody Ends -->
-
-</table><!-- table Ends -->
-
-</div><!-- table-responsive Ends -->
-
-</div><!-- box Ends -->
-
-</div><!-- col-md-3 Ends -->
 
 </div><!-- container Ends -->
 </div><!-- content Ends -->

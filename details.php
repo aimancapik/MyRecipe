@@ -140,7 +140,7 @@ $run_check = mysqli_query($con,$check_product);
 
 if(mysqli_num_rows($run_check)>0){
 
-echo "<script>alert('This Product is already added in cart')</script>";
+echo "<script>alert('This recipe is already added in the wishlist')</script>";
 
 echo "<script>window.open('$pro_url','_self')</script>";
 
@@ -196,7 +196,7 @@ echo "<script>window.open('$pro_url','_self')</script>";
 </div>< form-group Ends -->
 
 <?php
-
+//-----------------------------------------------------------------------SINI IMRAN
 // echo "
 
 // <p class='price'>

@@ -73,7 +73,7 @@ else {
 
 <div class="huge"> <?php echo $count_products; ?> </div>
 
-<div>Products</div>
+<div>Recipes</div>
 
 </div><!-- col-xs-9 text-right Ends -->
 
@@ -85,7 +85,7 @@ else {
 
 <div class="panel-footer"><!-- panel-footer Starts -->
 
-<span class="pull-left"> View Product </span>
+<span class="pull-left"> View Recipes </span>
 
 <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
 
@@ -98,7 +98,7 @@ else {
 
 <div class="panel-footer"><!-- panel-footer Starts -->
 
-<span class="pull-left"> Insert Product </span>
+<span class="pull-left"> Insert a Recipe </span>
 
 <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
 
@@ -216,156 +216,11 @@ else {
 </div><!-- col-lg-3 col-md-6 Ends -->
 
 
-<div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
 
-<div class="panel panel-red"><!-- panel panel-red Starts -->
-
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<div class="row"><!-- panel-heading row Starts -->
-
-<div class="col-xs-3"><!-- col-xs-3 Starts -->
-
-<i class="fa fa-support fa-5x"> </i>
-
-</div><!-- col-xs-3 Ends -->
-
-<div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
-
-<div class="huge"> <?php echo $count_total_orders; ?> </div>
-
-<div>Orders</div>
-
-</div><!-- col-xs-9 text-right Ends -->
-
-</div><!-- panel-heading row Ends -->
-
-</div><!-- panel-heading Ends -->
-
-<a href="index.php?view_orders">
-
-<div class="panel-footer"><!-- panel-footer Starts -->
-
-<span class="pull-left"> View Details </span>
-
-<span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
-
-<div class="clearfix"></div>
-
-</div><!-- panel-footer Ends -->
-
-</div><!-- panel panel-red Ends -->
-
-</div><!-- col-lg-3 col-md-6 Ends -->
 
 
 </div><!-- 2 row Ends -->
 
-<div class="row">
-    <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
 
-        <div class="panel panel-success"><!-- panel panel-red Starts -->
-        
-        <div class="panel-heading"><!-- panel-heading Starts -->
-        
-        <div class="row"><!-- panel-heading row Starts -->
-        
-        <div class="col-xs-3"><!-- col-xs-3 Starts -->
-        
-        <i class="fa fa-dollar fa-5x"> </i>
-        
-        </div><!-- col-xs-3 Ends -->
-        
-        <div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
-        
-        <div class="huge"> <?php echo $count_payment?> </div>
-        
-        <div>Payment</div>
-        
-        </div><!-- col-xs-9 text-right Ends -->
-        
-        </div><!-- panel-heading row Ends -->
-        
-        </div><!-- panel-heading Ends -->
-        
-        <a href="index.php?view_payments">
-        
-        <div class="panel-footer"><!-- panel-footer Starts -->
-        
-        <span class="pull-left"> View  All Payment</span>
-        
-        <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
-        
-        <div class="clearfix"></div>
-        
-        </div><!-- panel-footer Ends -->
-        
-        </div><!-- panel panel-red Ends -->
-        
-        </div><!-- col-lg-3 col-md-6 Ends -->
-
-        <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
-
-<div class="panel panel-green"><!-- panel panel-green Starts -->
-
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<div class="row"><!-- panel-heading row Starts -->
-
-<div class="col-xs-3"><!-- col-xs-3 Starts -->
-
-<i class="fa fa-comments fa-5x"> </i>
-
-</div><!-- col-xs-3 Ends -->
-
-<div class="col-xs-9 text-right"><!-- col-xs-9 text-right Starts -->
-
-<div class="huge"> <?php echo $count_customers; ?> </div>
-
-<div>Customers</div>
-
-</div><!-- col-xs-9 text-right Ends -->
-
-</div><!-- panel-heading row Ends -->
-
-</div><!-- panel-heading Ends -->
-
-<a href="index.php?view_customers">
-
-<div class="panel-footer"><!-- panel-footer Starts -->
-
-<span class="pull-left"> View Customer </span>
-
-<span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
-
-<div class="clearfix"></div>
-
-</div><!-- panel-footer Ends -->
-
-</a>
-
-</div><!-- panel panel-green Ends -->
-
-</div><!-- col-lg-3 col-md-6 Ends -->
-
-</div>
-
-</div><!-- panel-body Ends -->
-
-</div><!-- panel panel-primary Ends -->
-
-</div><!-- col-lg-8 Ends -->
-
-<div class="col-md-4"><!-- col-md-4 Starts -->
-
-<div class="panel"><!-- panel Starts -->
-
-
-
-</div><!-- panel Ends -->
-
-</div><!-- col-md-4 Ends -->
-
-</div><!-- 3 row Ends -->
 
 <?php } ?>
