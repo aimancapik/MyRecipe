@@ -42,6 +42,8 @@ $pro_img1 = $row_product['product_img1'];
 
 $pro_url = $row_product['product_url'];
 
+$qr = $row_product['qrcode'];
+
 ?>
 
   <main>
@@ -197,15 +199,19 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 <?php
 //-----------------------------------------------------------------------SINI IMRAN
-// echo "
+echo "
 
-// <p class='price'>
+<p>
 
-// Product Price : RM$pro_price<br>
+<span class='nero__bold'>Ingredients</span>
+<br>
+$pro_desc
+$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc$pro_desc
+<br>
 
-// </p>
+</p>
 
-// ";
+";
 
 
 
@@ -293,19 +299,7 @@ echo "<script>window.open('$pro_url','_self')</script>";
 </div><!-- box Ends -->
 
 
-<div class="row" id="thumbs" ><!-- row Starts -->
 
-<div class="col-xs-4" ><!-- col-xs-4 Starts -->
-
-<a href="#" class="thumb" >
-
-<img src="admin_area/product_images/<?php echo $pro_img1; ?>" class="img-responsive" >
-
-</a>
-
-</div><!-- col-xs-4 Ends -->
-
-</div><!-- row Ends -->
 
 
 </div><!-- col-sm-6 Ends -->
@@ -313,29 +307,35 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 </div><!-- row Ends -->
 
-<div class="box" id="details"><!-- box Starts -->
+<div class="box" id="details">
+  <span class="nero__bold">Recipe Steps</span>
 
-<a class="btn btn-info tab" style="margin-bottom:10px;" href="#description" data-toggle="tab"><!-- btn btn-primary tab Starts -->
+  <hr style="margin-top:0px;">
 
-<?php
+  <div class="tab-content"><!-- tab-content Starts -->
 
-echo "Recipe Steps";
+    <table class="table">
+      <td style="width: 700px;">
+        <div id="description" class="tab-pane fade in active" style="margin-top:7px;" >
+          <?php echo $pro_desc; ?>
+          <?php echo $pro_desc; ?>
+          <?php echo $pro_desc; ?>
+          <?php echo $pro_desc; ?>
+          <?php echo $pro_desc; ?>
+          <?php echo $pro_desc; ?>
+        </div>
+      </td>
+      <td>
+        <div class="item active">
+          <center>
+            <img src="admin_area/product_qr/<?php echo $qr; ?>" class="img-responsive">
+          </center>
+        </div>
+      </td>
+    </table>
+    
 
-?>
-
-</a><!-- btn btn-primary tab Ends -->
-
-<hr style="margin-top:0px;">
-
-<div class="tab-content"><!-- tab-content Starts -->
-
-<div id="description" class="tab-pane fade in active" style="margin-top:7px;" ><!-- description tab-pane fade in active Starts -->
-
-<?php echo $pro_desc; ?>
-
-</div><!-- description tab-pane fade in active Ends -->
-
-</div><!-- tab-content Ends -->
+  </div><!-- tab-content Ends -->
 
 </div><!-- box Ends -->
 
