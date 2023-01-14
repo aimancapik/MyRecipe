@@ -196,7 +196,7 @@ echo "<script>window.open('$pro_url','_self')</script>";
 </div>< form-group Ends -->
 
 <?php
-
+//-----------------------------------------------------------------------SINI IMRAN
 // echo "
 
 // <p class='price'>
