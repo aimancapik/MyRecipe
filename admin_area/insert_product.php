@@ -169,8 +169,6 @@ Product Url Example : product-name-combo
 if(isset($_POST['submit'])){
 
 $product_title = $_POST['product_title'];
-$product_cat = $_POST['product_cat'];
-$cat = $_POST['cat'];
 $product_price = $_POST['product_price'];
 $product_desc = $_POST['product_desc'];
 
@@ -188,6 +186,31 @@ $insert_product = "insert into products (date,product_title,product_url,product_
 $run_product = mysqli_query($con,$insert_product);
 
 if($run_product){
+  $last_id = mysqli_insert_id($con);
+  // Generate QR Code
+
+  include '../plugins/phpqrcode/qrlib.php';
+  $text = $_SERVER['HTTP_HOST'] . "pdf.php/?recipe_id=$last_id";
+    
+  // $path variable store the location where to 
+  // store image and $file creates directory name
+  // of the QR code file by using 'uniqid'
+  // uniqid creates unique id based on microtime
+  $path = 'product_qr/';
+  $filename = uniqid().".png";
+  $file = $path . $filename;
+    
+  // $ecc stores error correction capability('L')
+  $ecc = 'L';
+  $pixel_Size = 10;
+  $frame_Size = 10;
+    
+  // Generates QR Code and Stores it in directory given
+  QRcode::png($text, $file, $ecc, $pixel_Size, $frame_Size);
+    
+  $stmt = "UPDATE products SET qrcode = '$filename' WHERE product_id = $last_id";
+
+  $result = mysqli_query($con,$stmt);
 
 echo "<script>alert('Product has been inserted successfully')</script>";
 

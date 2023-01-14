@@ -1,100 +1,84 @@
 <?php
-
 session_start();
 
 include("includes/db.php");
 include("functions/functions.php");
 include("includes/main.php");
-
 ?>
-  <!-- MAIN -->
-  <main>
+<!-- MAIN -->
+<main>
     <!-- HERO -->
     <div class="nero">
-      <div class="nero__heading">
-        <span class="nero__bold">Recipes</span>
-      </div>
-      <p class="nero__text">
-      </p>
+        <div class="nero__heading">
+            <span class="nero__bold">Recipes</span>
+        </div>
+        <p class="nero__text">
+        </p>
     </div>
-  </main>
+</main>
 
 
 <div id="content" ><!-- content Starts -->
-<div class="container" ><!-- container Starts -->
+    <div class="container" ><!-- container Starts -->
 
-<div class="col-md-12" ><!--- col-md-12 Starts -->
+        <?php getProducts(); ?>
 
-
-
-</div><!--- col-md-12 Ends -->
+        <div class="col-md-9" ><!-- col-md-9 Starts --->
 
 
+          
 
-<div class="col-md-9" ><!-- col-md-9 Starts --->
 
+            <center><!-- center Starts -->
 
-<?php getProducts(); ?>
+                <ul class="pagination" ><!-- pagination Starts -->
 
-</div><!-- row Ends -->
+                  <?php getPaginator(); ?>
 
-<center><!-- center Starts -->
+                </ul><!-- pagination Ends -->
 
-<ul class="pagination" ><!-- pagination Starts -->
-
-<?php getPaginator(); ?>
-
-</ul><!-- pagination Ends -->
-
-</center><!-- center Ends -->
+            </center><!-- center Ends -->
 
 
 
-</div><!-- col-md-9 Ends --->
+        </div><!-- col-md-9 Ends --->
 
-
-
-</div><!--- wait Ends -->
-
-</div><!-- container Ends -->
+    </div><!-- container Ends -->
 </div><!-- content Ends -->
 
 
 
 <?php
-
 include("includes/footer.php");
-
 ?>
 
-<script src="js/jquery.min.js"> </script>
+<script src="js/jquery.min.js"></script>
 
 <script src="js/bootstrap.min.js"></script>
 
 <script>
 
-$(document).ready(function(){
+$(document).ready(function () {
 
 /// Hide And Show Code Starts ///
 
-$('.nav-toggle').click(function(){
+    $('.nav-toggle').click(function () {
 
-$(".panel-collapse,.collapse-data").slideToggle(700,function(){
+        $(".panel-collapse,.collapse-data").slideToggle(700, function () {
 
-if($(this).css('display')=='none'){
+            if ($(this).css('display') == 'none') {
 
-$(".hide-show").html('Show');
+                $(".hide-show").html('Show');
 
-}
-else{
+            } else {
 
-$(".hide-show").html('Hide');
+                $(".hide-show").html('Hide');
 
-}
+            }
 
-});
+        });
 
-});
+    });
 
 /// Hide And Show Code Ends ///
 
@@ -109,18 +93,18 @@ $(".hide-show").html('Hide');
 <script>
 
 
-$(document).ready(function(){
+    $(document).ready(function () {
 
-  // getProducts Function Code Starts
+        // getProducts Function Code Starts
 
-  function getProducts(){
-
-
-   }
+        function getProducts() {
 
 
+        }
 
- });
+
+
+    });
 
 </script>
 
