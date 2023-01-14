@@ -2,14 +2,15 @@
 require_once 'plugins/dompdf/autoload.inc.php';
 require_once 'includes/db.php';
 
-//$id = $_GET['recipe_id'];
-$id = 1;
+$id = $_GET['recipe_id'];
+// $id = 1;
 $sql = "SELECT * FROM products WHERE product_id = $id";
 
 $result = $con->query($sql);
 
 $data = $result->fetch_assoc();
-$step = $data['product_desc'];
+$step = nl2br($data['product_desc']);
+$ingredient = $data['ingredient'];
 $img = $data['product_img1'];
 $filename = $data['product_title'] . ".pdf";
 $recipe_name = $data['product_title'];
@@ -36,6 +37,10 @@ $html = "<style>
             .logo {
                 text-align:center;
             }
+            
+            pre {
+                word-break: keep-all;
+            }
 
             .logo-img {
                 width: 45mm;
@@ -52,7 +57,7 @@ $html = "<style>
             }
 
             td {
-                vertical-align: top;
+                vertical-align: middle;
                 padding: 5mm;
             }
         </style>
@@ -67,11 +72,15 @@ $html = "<style>
                 <td>
                     <h3>$recipe_name</h3>
                     <h3>Ingredient</h3>
-                    <p>$step</p>
-                    <h3>Steps Tutorial</h3>
-                    <p>$step</p>
+                    <p>$ingredient</p>
                 </td>
             <tr>
+            <tr>
+                <td colspan='2'>
+                    <h3>Steps Tutorial</h3>
+                    $step
+                </td>
+            </tr>
         </table>
         ";
 
@@ -79,7 +88,7 @@ $html = "<style>
 $dompdf->loadHtml($html);
 
 // (Optional) Setup the paper size and orientation
-$dompdf->setPaper('A4', 'potrait');
+$dompdf->setPaper('A4', 'landscape');
 
 // Render the HTML as PDF
 $dompdf->render();

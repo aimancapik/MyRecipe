@@ -318,12 +318,9 @@ echo "<script>window.open('$pro_url','_self')</script>";
     <table class="table">
       <td style="width: 700px;">
         <div id="description" class="tab-pane fade in active" style="margin-top:7px;" >
-          <?php echo $pro_desc; ?>
-          <?php echo $pro_desc; ?>
-          <?php echo $pro_desc; ?>
-          <?php echo $pro_desc; ?>
-          <?php echo $pro_desc; ?>
-          <?php echo $pro_desc; ?>
+          <pre>
+          <?php echo trim($pro_desc); ?>
+          </pre>
         </div>
       </td>
       <td>
