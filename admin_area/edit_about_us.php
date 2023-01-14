@@ -114,7 +114,7 @@ $about_desc = $_POST['about_desc'];
 
 $update_about_us = "update about_us set about_desc='$about_desc'";
 
-$run_about_us = mysqli_query($con,$update_about_us);
+$run_about_us = mysqli_query($con , $update_about_us);
 
 if($run_about_us){
 
