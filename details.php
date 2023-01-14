@@ -319,7 +319,7 @@ echo "<script>window.open('$pro_url','_self')</script>";
       <td style="width: 700px;">
         <div id="description" class="tab-pane fade in active" style="margin-top:7px;" >
           <pre>
-          <?php echo trim($pro_desc); ?>
+          <?php echo nl2br($pro_desc); ?>
           </pre>
         </div>
       </td>
