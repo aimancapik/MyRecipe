@@ -13,7 +13,7 @@ include("functions/functions.php");
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="login_register.css">
 
 	<style>
 	img {
@@ -29,7 +29,7 @@ include("functions/functions.php");
 
 <div class="container">
     <form action="customer_register.php" method="post" class="login-email" enctype="multipart/form-data" ><!-- form Starts -->
-    <img src="logo-small.png" style="width:350px;height:200px;"/>
+    <img src="myrecipelogo.png" style="width:250px;height:250px;"/>
                 <p class="login-text"  style="font-size: 4rem; font-weight: 600; color:#db8f1c ;">Register</p>
           <div class="input-group">
             <input type="text" placeholder="Name" name="c_name" required>

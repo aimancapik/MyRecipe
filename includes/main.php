@@ -4,10 +4,7 @@
 <head>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto" rel="stylesheet">
- 
-
-  <link rel="shortcut icon" href="https://makchantek.com/wp-content/uploads/2021/03/IMG_20210311_172832_362.jpg" type="image/png">
-  <title>Maajun Nenda Empire</title>
+  <title>MyRecipe</title>
   <link href="styles/bootstrap.min.css" rel="stylesheet">
   <link href="styles/backend.css" rel="stylesheet">
   <link href="styles/style.css" rel="stylesheet">
@@ -81,7 +78,7 @@ if(!isset($_SESSION['customer_email'])){
 
         <div class="logo">
           <a class="logo__link" href="index.php">
-            <img class="logo__img" src="images/logobaru.png" width="230" height="15">
+            <img class="logo__img" src="myrecipelogo.png" width="200px" height="115px">
           </a>
         </div>
 
