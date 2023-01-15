@@ -39,7 +39,7 @@ $about_desc = $row_about_us['about_desc'];
 
 ?>
 
-<p> <?php echo $about_desc; ?> </p>
+<p> <?php echo nl2br($about_desc); ?> </p>
 
 </div><!-- box Ends -->
 
